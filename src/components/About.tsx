@@ -21,26 +21,23 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 sm:py-32">
+    <section id="about-extra" className="hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <div className="text-center mb-10 animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               About Me
             </h2>
             <div className="w-20 h-1 bg-gradient-primary mx-auto" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="space-y-6 animate-fade-in">
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-10">
+            <div className="space-y-4 animate-fade-in">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a junior Computer Science student with a passion for web development
-                and UI/UX design. My journey in tech is driven by a desire to create
-                digital experiences that are both beautiful and functional.
+                -
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I believe great design isn't just about aesthetics—it's about solving
-                problems and creating meaningful connections between users and technology.
+                -
               </p>
             </div>
 
