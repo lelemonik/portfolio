@@ -5,22 +5,44 @@ const TechStack = () => {
   const skillCategories = [
     {
       category: "Frontend Development",
-      skills: ["HTML/CSS", "JavaScript", "TypeScript", "React", "Tailwind CSS", "Responsive Design"],
+      skills: [
+        { name: "HTML/CSS" },
+        { name: "JavaScript" },
+        { name: "TypeScript" },
+        { name: "React" },
+        { name: "Tailwind CSS" },
+        { name: "Responsive Design" }
+      ],
       color: "bg-gradient-primary",
     },
     {
       category: "UI/UX Design",
-      skills: ["Figma", "Adobe XD", "User Research", "Wireframing", "Prototyping", "Design Systems"],
+      skills: [
+        { name: "Figma", label: "currently learning" }
+      ],
       color: "bg-gradient-accent",
     },
     {
       category: "Tools & Technologies",
-      skills: ["Git", "GitHub", "VS Code", "npm", "Vite", "RESTful APIs"],
+      skills: [
+        { name: "Git" },
+        { name: "GitHub" },
+        { name: "VS Code" },
+        { name: "npm" },
+        { name: "Vite" }
+      ],
       color: "bg-gradient-primary",
     },
     {
       category: "Soft Skills",
-      skills: ["Problem Solving", "Team Collaboration", "Communication", "Time Management", "Creative Thinking", "Attention to Detail"],
+      skills: [
+        { name: "Problem Solving" },
+        { name: "Team Collaboration" },
+        { name: "Communication" },
+        { name: "Time Management" },
+        { name: "Creative Thinking" },
+        { name: "Attention to Detail" }
+      ],
       color: "bg-gradient-accent",
     },
   ];
@@ -54,9 +76,14 @@ const TechStack = () => {
                       <Badge
                         key={skillIndex}
                         variant="secondary"
-                        className="text-sm py-2 px-3 hover:scale-110 hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default"
+                        className="text-sm py-2 px-3 hover:scale-110 hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default flex items-center gap-1.5"
                       >
-                        {skill}
+                        {skill.name}
+                        {skill.label && (
+                          <span className="text-[10px] bg-primary/20 px-1.5 py-0.5 rounded-full">
+                            {skill.label}
+                          </span>
+                        )}
                       </Badge>
                     ))}
                   </div>

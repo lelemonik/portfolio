@@ -8,23 +8,36 @@ const Projects = () => {
   const projects = [
     {
       title: "Hearts In Motion",
-      description: "A school finals project showcasing love and ethics.",
+      description: (
+        <>
+          A personal-creative collaborative school finals project celebrating the journey of me and my partner,{" "}
+          <a 
+            href="https://terd.zentariph.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-primary hover:underline font-medium"
+          >
+            Terd
+          </a>
+          , showcasing an intimate and poetic online space that's part love-story, part portfolio, part mental wellness reflection.
+        </>
+      ),
       image: "/images/hearts-in-motion.png",
-      tags: ["React", "TypeScript", "Tailwind"],
+      tags: ["-", "-", "-"],
       viewUrl: "https://heartinmotion.vercel.app/",
     },
     {
       title: "By Chi | Affiliator's Showcase",
       description: "A personal project showcasing a curated selection of products.",
       image: "/images/bychi.png",
-      tags: ["Next.js", "UI/UX", "Design"],
+      tags: ["React", "TypeScript", "Vite", "CSS"],
       viewUrl: "http://bychi.vercel.app",
     },
     {
       title: "Zentry",
-      description: "",
+      description: "A personal project dedicated for my partner who loves taking notes and documenting tasks.",
       image: "/images/zentry.png",
-      tags: ["JavaScript", "API", "CSS"],
+      tags: ["TypeScript", "React", "Vite", "CSS", "pwa-ready", "AI CHAT INTEGRATION"],
       viewUrl: "https://myzentry.vercel.app/",
     },
   ];
@@ -35,19 +48,19 @@ const Projects = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Featured Projects
+              Projects
             </h2>
             <div className="w-20 h-1 bg-gradient-primary mx-auto mb-4" />
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A collection of my work showcasing my skills in web development and design
+            <p className="text-l text-muted-foreground max-w-2xl mx-auto">
+             Some of my simple, yet favorite works that I have enjoyed creating and I'm very proud of.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className="group overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-3 hover:scale-105 animate-fade-in-up border-border hover:border-primary/50"
+                className="group overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-2 lg:hover:-translate-y-3 hover:scale-[1.02] lg:hover:scale-105 animate-fade-in-up border-border hover:border-primary/50"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <div className="relative overflow-hidden aspect-video">

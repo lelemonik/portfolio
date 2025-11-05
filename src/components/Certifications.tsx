@@ -1,29 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Award } from "lucide-react";
 
 const Certifications = () => {
-  const certifications = [
-    {
-      title: "Certificate Name",
-      issuer: "Issuing Organization",
-      date: "Month Year",
-      description: "Brief description of what this certification covers",
-      skills: ["Skill 1", "Skill 2", "Skill 3"],
-      color: "bg-gradient-primary",
-    },
-    {
-      title: "Another Certificate",
-      issuer: "Another Organization",
-      date: "Month Year",
-      description: "Brief description of what this certification covers",
-      skills: ["Skill 1", "Skill 2"],
-      color: "bg-gradient-accent",
-    },
-    // Add more certifications as needed
-  ];
-
   return (
-    <div id="certifications" className="h-full">
+    <div id="certifications" className="h-full flex flex-col">
       <div className="text-center mb-10 animate-fade-in">
         <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
           Certifications
@@ -34,38 +14,22 @@ const Certifications = () => {
         </p>
       </div>
 
-      <div className="grid gap-6">
-        {certifications.map((cert, index) => (
-          <Card
-            key={index}
-            className="overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-105 animate-fade-in-up border-border group"
-            style={{ animationDelay: `${index * 150}ms` }}
-          >
-            <div className={`h-2 ${cert.color} group-hover:h-3 transition-all duration-500`} />
-            <CardContent className="pt-4">
-              <h3 className="text-xl font-semibold mb-1 text-foreground group-hover:text-primary transition-colors duration-300">
-                {cert.title}
-              </h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                {cert.issuer} • {cert.date}
-              </p>
-              <p className="text-muted-foreground mb-3 group-hover:text-foreground transition-colors duration-300">
-                {cert.description}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {cert.skills.map((skill, skillIndex) => (
-                  <Badge
-                    key={skillIndex}
-                    variant="secondary"
-                    className="text-sm py-2 px-3 hover:scale-110 hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
+      <div className="flex-1 flex items-center justify-center">
+        <Card className="max-w-md w-full border-dashed border-2 border-muted-foreground/30 bg-muted/20 animate-fade-in">
+          <CardContent className="pt-12 pb-12 text-center">
+            <div className="flex justify-center mb-6">
+              <div className="p-4 bg-gradient-primary rounded-full">
+                <Award className="h-12 w-12 text-primary-foreground" />
               </div>
-            </CardContent>
-          </Card>
-        ))}
+            </div>
+            <h3 className="text-2xl font-semibold mb-3 text-foreground">
+              About to launch!
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Currently working on obtaining professional certifications to enhance my skills and expertise.
+            </p>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
