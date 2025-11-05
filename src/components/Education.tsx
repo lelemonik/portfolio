@@ -20,18 +20,6 @@ const Education = () => {
       company: "High School",
       period: "2017 - 2021",
       type: "education",
-    },
-    {
-      title: "PURA V. KALAW ELEMENTARY SCHOOL",
-      company: "Elementary",
-      period: "2014 - 2017",
-      type: "education",
-    },
-    {
-      title: "HOLY ANGELS MONTESSORI SCHOOL",
-      company: "Elementary",
-      period: "2012 - 2014",
-      type: "education",
     }
   ];
 

@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Picture from "@/components/Picture";
 import About from "@/components/About";
-import Experience from "@/components/Educaiton";
+import Experience from "@/components/Education";
 import TechStack from "@/components/TechStack";
 import Projects from "@/components/Projects";
 import Connect from "@/components/Connect";
@@ -14,11 +14,22 @@ const Index = () => {
       <Navbar />
       <Picture />
       <About />
-      <Experience />
-      <TechStack />
+      <div className="hidden">
+        <Experience />
+      </div>
+      
+      {/* Tech Stack and Certifications side by side */}
+      <section className="py-12 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+            <TechStack />
+            <Certifications />
+          </div>
+        </div>
+      </section>
+      
       <Projects />
       <Connect />
-      <Certifications />
       <Footer />
     </div>
   );

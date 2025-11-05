@@ -26,20 +26,18 @@ const TechStack = () => {
   ];
 
   return (
-    <section id="tech-stack" className="py-12 sm:py-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-10 animate-fade-in">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Tech Stack
-            </h2>
-            <div className="w-20 h-1 bg-gradient-primary mx-auto mb-4" />
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Technologies and tools I work with to bring ideas to life
-            </p>
-          </div>
+    <div id="tech-stack" className="h-full">
+      <div className="text-center mb-10 animate-fade-in">
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          Tech Stack
+        </h2>
+        <div className="w-20 h-1 bg-gradient-primary mx-auto mb-4" />
+        <p className="text-lg text-muted-foreground">
+          Technologies and tools I work with
+        </p>
+      </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid gap-6">
             {skillCategories.map((category, index) => (
               <Card
                 key={index}
@@ -65,10 +63,8 @@ const TechStack = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
