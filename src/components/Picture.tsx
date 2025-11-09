@@ -135,7 +135,7 @@ const Picture = () => {
                   <div className="w-16 h-1 bg-gradient-primary mb-2 mx-auto lg:mx-0" />
                 </div>
                 
-                <div className="space-y-2 text-center lg:text-justify">
+                <div className="space-y-2 text-justify">
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     I am a junior student in the Computer Science department with a strong passion for web development and UI/UX design. I am eager to learn and contribute to innovative projects that enhance user experiences.
                   </p>
