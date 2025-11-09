@@ -91,10 +91,10 @@ const Picture = () => {
                       </div>
                     </div>
                     
-                    <div className="relative pl-6 group hover:translate-x-1 transition-transform duration-300">
-                      <div className="absolute left-0 top-1 w-4 h-4 rounded-full border-2 bg-background border-border group-hover:bg-primary group-hover:border-primary group-hover:scale-125 transition-all duration-300" />
+                    <div className="relative pl-6">
+                      <div className="absolute left-0 top-1 w-4 h-4 rounded-full border-2 bg-background border-border" />
                       <div className="space-y-0.5">
-                        <h3 className="text-sm sm:text-base font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                        <h3 className="text-sm sm:text-base font-bold text-foreground">
                           Our Lady of Perpetual Succor College
                         </h3>
                         <p className="text-xs sm:text-sm text-muted-foreground">
@@ -106,10 +106,10 @@ const Picture = () => {
                       </div>
                     </div>
                     
-                    <div className="relative pl-6 group hover:translate-x-1 transition-transform duration-300">
-                      <div className="absolute left-0 top-1 w-4 h-4 rounded-full border-2 bg-background border-border group-hover:bg-primary group-hover:border-primary group-hover:scale-125 transition-all duration-300" />
+                    <div className="relative pl-6">
+                      <div className="absolute left-0 top-1 w-4 h-4 rounded-full border-2 bg-background border-border" />
                       <div className="space-y-0.5">
-                        <h3 className="text-sm sm:text-base font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                        <h3 className="text-sm sm:text-base font-bold text-foreground">
                           Jose P. Laurel Sr. High School
                         </h3>
                         <p className="text-xs sm:text-sm text-muted-foreground">
@@ -135,12 +135,12 @@ const Picture = () => {
                   <div className="w-16 h-1 bg-gradient-primary mb-2 mx-auto lg:mx-0" />
                 </div>
                 
-                <div className="space-y-2 text-center lg:text-left">
+                <div className="space-y-2 text-center lg:text-justify">
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                    A Junior in college under Computer Science department, with a passion for web development and UI/UX design. Eager to learn and contribute to innovative projects that enhance user experiences.
+                    I am a junior student in the Computer Science department with a strong passion for web development and UI/UX design. I am eager to learn and contribute to innovative projects that enhance user experiences.
                   </p>
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                    Right now, I'm focusing on expanding my knowledge in full-stack development and exploring new technologies to create impactful unique solutions.
+                    Currently, I am focusing on expanding my knowledge in full-stack development and exploring new technologies to create impactful and unique solutions.
                   </p>
                 </div>
               </div>
