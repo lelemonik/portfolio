@@ -173,7 +173,7 @@ const Picture = () => {
                             Email
                           </h3>
                           <p className="text-xs text-muted-foreground truncate">
-                            gaylemonique21@gmail.com
+                            gayle@zentariph.com
                           </p>
                         </div>
                       </CardContent>
